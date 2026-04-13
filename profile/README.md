@@ -39,11 +39,11 @@
 
 ## 배포 링크
 
-### 🚀 [Study.Q - 랜덤 퀴즈 스마트 강의 플랫폼](https://ubaa-pj.github.io/Study.Q-FE/)
+### 🚀 [Study.Q - 랜덤 퀴즈 스마트 강의 플랫폼](https://ubaa-pj.github.io/Study.Q-FE/auth/singup)
 
-### 백엔드 서버 배포 링크
+> [Study.Q Figma 링크](https://www.figma.com/design/xj8io2vlAtk6WOzbWUXwNl/Study.Q?node-id=0-1&t=EUTq0tXSwIwuEEpa-1)<br>
+> [배포된 백엔드 서버 링크](https://gahyon.smilersa.com/study_q)
 
-### [Figma 링크](https://www.figma.com/design/xj8io2vlAtk6WOzbWUXwNl/Study.Q?node-id=0-1&t=EUTq0tXSwIwuEEpa-1)
 
 <br>
 
@@ -59,18 +59,10 @@
 
 ## 🏗️ 아키텍처
 
-```
-┌─────────────────────┐        ┌─────────────────────┐
-│      Study.Q-FE     │        │      Study.Q-BE     │
-│                     │        │                     │
-│  - 강의 플레이어     │◄──────►│  - 강의 관리 API    │
-│  - 퀴즈 팝업 UI      │        │  - 퀴즈 로직        │
-│  - 학습 대시보드     │        │  - 사용자 인증      │
-│  - 진도 트래킹       │        │  - 학습 기록 저장   │
-│                     │        │                     │
-│  JavaScript · React │        │  Python · FastAPI   │
-└─────────────────────┘        └─────────────────────┘
-```
+| | Study.Q-FE | Study.Q-BE |
+|--|--|--|
+| **기능** | 강의 플레이어 / 퀴즈 팝업 UI / 학습 대시보드 / 진도 트래킹 | 강의 관리 API / 퀴즈 로직 / 사용자 인증 / 학습 기록 저장 |
+| **기술** | JavaScript · React | Python · FastAPI |
 
 <br>
 
@@ -142,3 +134,20 @@
 ![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=for-the-badge&logo=firebase&logoColor=white)
 
 </div>
+
+<br>
+
+## 📄 Pages
+
+| 페이지 | 파일 | 설명 |
+|--------|------|------|
+| 메인 | `MainPage.jsx` | 서비스 메인 화면 |
+| 로그인 | `LoginPage.jsx` | 로그인 |
+| 회원가입 | `SignUpPage.jsx` | 회원가입 |
+| 강의 목록 | `CourseCatalogPage.jsx` | 전체 강의 카탈로그 |
+| 강의 상세 | `CourseDetailPage.jsx` | 강의 상세 정보 |
+| 강의 생성 | `CreateCoursePage.jsx` | 새 강의 등록 |
+| 강의 수정 | `EditCoursePage.jsx` | 강의 편집 |
+| 내 강의 | `MyCoursesPage.jsx` | 수강 중인 강의 목록 |
+| 퀴즈 분석 | `QuizAnalyticsPage.jsx` | 퀴즈 결과 및 통계 |
+| 오답 노트 | `MistakeNotesPage.jsx` | 틀린 문제 모아보기 |
